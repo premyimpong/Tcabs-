@@ -1,0 +1,37 @@
+<?php 
+include_once('mysqliconnect.php'); 
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Unit of Study</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div>
+
+	</div>
+<div>
+	<form action="unit.php" method="post">
+		<div class="container">
+			<div class="col-sm-3">
+				<h1>Register Unit of Study</h1>
+				<p>Fill the information</p>
+				
+				<label for="unitid"><b>Unit ID</b></label>
+				<input class="form-control" type="text" id="unitid" name="unitid">
+
+				<label for="unitname"><b>Unit name</b></label>
+				<input class="form-control" type="text" id="unitname" name="unitname">
+
+				<label for="unitdescription"><b>Description</b></label>
+				<input class="form-control" type="text" id="unitdesc" name="unitdesc">
+
+				<input type="submit" value="Register Unit">
+			</div>
+		</div>		
+
+	</form>
+</div>
+</body>
+</html>

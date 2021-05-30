@@ -1,0 +1,79 @@
+<?php
+   include_once 'mysqliconnect.php' ;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Teams Registration" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="Danushka Kalhara"  />
+  <title>Teams Page</title>
+</head>
+<body>
+
+	<header>
+     <nav class="nav">         	 
+		 <a href="Teams.html">Teams</a>
+		 <a href="Projects.html">Projects</a>	
+		 <!-- <a href="enquire.html">Enquire</a>
+		 <a href="product.html">Product</a>
+		 <a href="index.html">Home</a>  -->
+      </nav>
+      <hr />
+	</header>
+	<form id ="regteam" method="post" action="registerteams.php">
+		<br><br>
+		<fieldset>
+		<h1 class="rgteam">Register Team</h1>
+			<legend>Team details:</legend>
+			<p>
+				<label for="teamid">Enter Team ID</label>
+				<input type="number" name="teamid" id="teamid" size="5" />
+			</p>
+			<p>
+				<label for="teamname">Enter your last name</label>
+				<input type="text" name="teamname" id="teamname" size="50" />
+			</p>
+			<p>
+				<label for="teammembers">Enter Team Members</label>
+				<input type="text" id="teammembers" name="teammembers" size="100" required="required">
+			</p>
+		
+		</fieldset>
+			
+			
+			
+		<div id="bottom"></div>
+		<p>
+			<input type="submit" value="Register Team" />
+			<input type="reset" value="Reset" />
+		</p>
+	</form>
+
+	<form id ="delteam" method="post" action="deleteteam.php">
+			<fieldset>
+			<h3 class="delteam">Delete Team</h3>
+				<p>
+				<label for="dteamid">Team ID</label>
+				<input type="number" name="dteamid" id="dteamid" size="5" />
+			</p>
+			<p>
+			<input type="submit" name="delteam" value="Delete Team" />
+			</p>
+			<input type="submit" name="searchteam" value="searchteam" action="search.php"/>
+			</fieldset>
+	</form>
+	<br>
+	<br>
+	
+
+
+
+	<footer class ="footer">
+        <p class="footertext"></p>
+	</footer>
+</body>
+</html>

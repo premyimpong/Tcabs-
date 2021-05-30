@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Project Registration" />
+  <meta name="keywords" content="HTML5, tags" />
+  <meta name="author" content="Danushka Kalhara"  />
+  <title>Projects Page</title>
+</head>
+<body>
+
+	<header>
+     <nav class="nav">         	 
+		 <a href="Teams.html">Teams</a>
+		 <a href="Projects.html">Projects</a>	
+		 <!-- <a href="enquire.html">Enquire</a>
+		 <a href="product.html">Product</a>
+		 <a href="index.html">Home</a>  -->
+      </nav>
+      <hr />
+	</header>
+	<form id ="regproject" method="post" action="registerprojects.php">
+		<br><br>
+		<fieldset>
+		<h3 class="rgproj">Project details:</h3>
+			<legend>Register Project</legend>
+			<p>
+				<label for="pid">Project ID</label>
+				<input type="number" name="pid" id="pid" size="5" />
+			</p>
+			<p>
+				<label for="pname">Project Name</label>
+				<input type="text" name="pname" id="pname" size="20" />
+
+			</p>
+			
+		
+		
+
+		<fieldset>
+			<legend>Project Description</legend>
+			<p>
+				<textarea id="projectdesc" name="projectdesc" rows="10" cols="50" placeholder="Write Project Description here..."></textarea>
+			</p>
+			</fieldset>
+			<p>
+			<input type="submit" value="Register Project" />
+			<input type="reset" value="Reset" />
+		</p>
+			</fieldset>
+	</form>
+	
+	<form id ="delproj" method="post" action="deleteproject.php">
+			<fieldset>
+			<h3 class="delproj">Delete Project</h3>
+				<p>
+				<label for="dpid">Project ID</label>
+				<input type="number" name="dpid" id="dpid" size="5" />
+			</p>
+			<p>
+			<input type="submit" name="delproj" value="Delete Project" />
+			</p>
+			</fieldset>
+	</form>
+
+	<footer class ="footer">
+        <p class="footertext"></p>
+	</footer>
+</body>
+</html>
